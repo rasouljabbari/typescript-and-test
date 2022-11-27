@@ -14,6 +14,7 @@
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.8",
     "eslint-plugin-jest-dom": "^4.0.3",
+    "lottie-react": "^2.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -26,9 +27,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint --ignore-path .gitignore .",
-    "format": "prettier --ignore-path .gitignore --write \"**/*.{js,jsx,ts,tsx,css,scss }\"",
-    "check-fix": "npm run lint && npm run format"
+    "format": "prettier --ignore-path .gitignore --write \"**/*.{js,jsx,ts,tsx,css,scss }\""
   },
   "eslintConfig": {
     "extends": [
@@ -50,11 +49,6 @@
     ]
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.42.1",
-    "@typescript-eslint/parser": "^5.42.1",
-    "eslint": "^8.27.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-react": "^7.31.10",
     "msw": "^0.48.2",
     "prettier": "2.7.1"
   }

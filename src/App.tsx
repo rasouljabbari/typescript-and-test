@@ -1,14 +1,15 @@
-import React from 'react'
-import { Private } from './components-tsx/auth/Private'
-import { Profile } from './components-tsx/auth/Profile'
-import { List } from './components-tsx/generics/List'
-import { RandomNumber } from './components-tsx/restriction/RandomNumber'
-import { Toast } from './components-tsx/templateLiterals/Toast'
-import { CustomButton } from './components-tsx/html/Button'
-import { CustomInput } from './components-tsx/html/Input'
-import { Text } from './components-tsx/polymorphic/Text'
-import { CustomSelect } from './components-tsx/react-select/CustomSelect'
-// import AppProviders from './components/providers/app-providers'
+import React from "react";
+// import { Private } from './components-tsx/auth/Private'
+// import { Profile } from './components-tsx/auth/Profile'
+// import { List } from './components-tsx/generics/List'
+// import { RandomNumber } from './components-tsx/restriction/RandomNumber'
+// import { Toast } from './components-tsx/templateLiterals/Toast'
+// import { CustomButton } from './components-tsx/html/Button'
+// import { CustomInput } from './components-tsx/html/Input'
+// import { Text } from './components-tsx/polymorphic/Text'
+// import { CustomSelect } from './components-tsx/react-select/CustomSelect'
+import AppProviders from "./components/providers/app-providers";
+import CustomLottie from "./assets/lottie/CustomLottie";
 // import { Button } from './components-tsx/events/Button'
 // import { Input } from './components-tsx/events/Input'
 // import { Container } from './components-tsx/styles/Container'
@@ -24,6 +25,22 @@ import { CustomSelect } from './components-tsx/react-select/CustomSelect'
 // import { Status } from './components-tsx/types/Status'
 // import { Heading } from './components-tsx/types/Heading'
 // import { Oscar } from './components-tsx/types/Oscar'
+
+type styleProps = {
+  height: number,
+  width: number
+}
+
+type actionTypes = {
+  visibility: number[]
+  type: string
+  frames: number[]
+}
+
+type interactivityTypes = {
+  mode: string,
+  actions: actionTypes[]
+}
 
 function App() {
 
@@ -47,70 +64,74 @@ function App() {
   //   }
   // ]
 
+
+
   return (
-    // <AppProviders>
-    <div className='App'>
+    <AppProviders>
+      <div className="App">
 
-      {/*types*/}
-      {/*<Heading>This is header</Heading>*/}
-      {/*<Oscar>*/}
-      {/*  <Heading>Oscar goes to Leonardo Dicaprio!</Heading>*/}
-      {/*</Oscar>*/}
-      {/*<Greet name={'Rasoul'} messageCount={25} isLoggedIn={true}/>*/}
-      {/*<Person name={personName}/>*/}
-      {/*<PersonList names={nameList}/>*/}
-      {/*<Status status={'error'}/>*/}
+    <CustomLottie/>
 
-      {/*styles + events*/}
-      {/*<Container styles={{border: '1px solid black', padding: '1rem'}}>*/}
+        {/*types*/}
+        {/*<Heading>This is header</Heading>*/}
+        {/*<Oscar>*/}
+        {/*  <Heading>Oscar goes to Leonardo Dicaprio!</Heading>*/}
+        {/*</Oscar>*/}
+        {/*<Greet name={'Rasoul'} messageCount={25} isLoggedIn={true}/>*/}
+        {/*<Person name={personName}/>*/}
+        {/*<PersonList names={nameList}/>*/}
+        {/*<Status status={'error'}/>*/}
 
-      {/*  /!*events*!/*/}
-      {/*  <Button*/}
-      {/*    handleClick={(event, id) => {*/}
-      {/*      console.log('Button Click', event, id)*/}
-      {/*    }}>Click</Button>*/}
+        {/*styles + events*/}
+        {/*<Container styles={{border: '1px solid black', padding: '1rem'}}>*/}
 
-      {/*  <Input value={''} handleChange={event => {*/}
-      {/*    console.log(event)*/}
-      {/*  }}/>*/}
-      {/*</Container>*/}
+        {/*  /!*events*!/*/}
+        {/*  <Button*/}
+        {/*    handleClick={(event, id) => {*/}
+        {/*      console.log('Button Click', event, id)*/}
+        {/*    }}>Click</Button>*/}
 
-      {/*useContext*/}
-      {/*<ThemeContextProvider>*/}
-      {/*  <Box />*/}
-      {/*</ThemeContextProvider>*/}
+        {/*  <Input value={''} handleChange={event => {*/}
+        {/*    console.log(event)*/}
+        {/*  }}/>*/}
+        {/*</Container>*/}
 
-      {/*<UserContextProvider>*/}
-      {/*  <User />*/}
-      {/*</UserContextProvider>*/}
+        {/*useContext*/}
+        {/*<ThemeContextProvider>*/}
+        {/*  <Box />*/}
+        {/*</ThemeContextProvider>*/}
 
-      {/*<MutableRef />*/}
+        {/*<UserContextProvider>*/}
+        {/*  <User />*/}
+        {/*</UserContextProvider>*/}
 
-      {/*<Counter message={'counter is : '}/>*/}
+        {/*<MutableRef />*/}
 
-      {/*<Private isLoggedIn={true} component={Profile}/>*/}
+        {/*<Counter message={'counter is : '}/>*/}
 
-      {/*<List items={['Batman', 'Superman']} onClick={(item) => console.log(item)} />*/}
-      {/*<List items={[1, 2, 3]} onClick={(item) => console.log(item)} />*/}
+        {/*<Private isLoggedIn={true} component={Profile}/>*/}
 
-      {/*<RandomNumber value={10} isPositive/>*/}
+        {/*<List items={['Batman', 'Superman']} onClick={(item) => console.log(item)} />*/}
+        {/*<List items={[1, 2, 3]} onClick={(item) => console.log(item)} />*/}
 
-      {/*<Toast position={'left-top'}/>*/}
-      {/*<Toast position={'center'}/>*/}
+        {/*<RandomNumber value={10} isPositive/>*/}
 
-      {/*<CustomButton variant={'primary'} onClick={() => console.log('clicked')}><span>Click Me</span></CustomButton>*/}
+        {/*<Toast position={'left-top'}/>*/}
+        {/*<Toast position={'center'}/>*/}
 
-      {/*<CustomInput type={'text'} name={'first_name'} />*/}
+        {/*<CustomButton variant={'primary'} onClick={() => console.log('clicked')}><span>Click Me</span></CustomButton>*/}
 
-      <Text as={'h1'} size={'lg'}>Heading</Text>
-      <Text as={'p'} size={'md'}>Paragraph</Text>
-      <Text as={'label'} size={'sm'} color={'secondary'}>Label</Text>
+        {/*<CustomInput type={'text'} name={'first_name'} />*/}
 
-      <CustomSelect/>
+        {/*<Text as={'h1'} size={'lg'}>Heading</Text>*/}
+        {/*<Text as={'p'} size={'md'}>Paragraph</Text>*/}
+        {/*<Text as={'label'} size={'sm'} color={'secondary'}>Label</Text>*/}
 
-    </div>
-    // </AppProviders>
-  )
+        {/*<CustomSelect/>*/}
+
+      </div>
+    </AppProviders>
+  );
 }
 
-export default App
+export default App;
