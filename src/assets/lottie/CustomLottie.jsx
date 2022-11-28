@@ -104,9 +104,10 @@ function CustomLottie() {
         a container.
       </p>
 
+      <h1 style={{ textAlign: 'center' }}>Sync Lottie with scroll</h1>
+
       <h2>File Sharing</h2>
 
-      <h1 style={{ textAlign: 'center' }}>Sync Lottie with scroll</h1>
       <p style={{ textAlign: 'center' }}>
         This section shows an example of a Lottie that is synced with the scroll
         bar. The scrolling effect is activated as soon as the animation enters
@@ -176,6 +177,7 @@ function CustomLottie() {
         to the scrolling of the window and "cursor" where the scrolling of the
         animation will be synced to the cursor position within the container.
       </p>
+
       <p>
         The name of the player ie: 'firstLottie' in this example is the ID set
         to the lottie web component on the html page. Configuration will contain
@@ -217,6 +219,7 @@ function CustomLottie() {
         to the scrolling of the window and "cursor" where the scrolling of the
         animation will be synced to the cursor position within the container.
       </p>
+
       <p>
         The name of the player ie: 'firstLottie' in this example is the ID set
         to the lottie web component on the html page. Configuration will contain
@@ -244,6 +247,7 @@ function CustomLottie() {
         to the scrolling of the window and "cursor" where the scrolling of the
         animation will be synced to the cursor position within the container.
       </p>
+
       <p>
         The name of the player ie: 'firstLottie' in this example is the ID set
         to the lottie web component on the html page. Configuration will contain
