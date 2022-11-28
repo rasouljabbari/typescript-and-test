@@ -1,11 +1,10 @@
 import React from 'react'
 
 type StatusProps = {
-  status: "loading" | "success" | "error"
+  status: 'loading' | 'success' | 'error'
 }
 
 export const Status = (props: StatusProps) => {
-
   let message
   if (props.status === 'loading') {
     message = 'Loading...'

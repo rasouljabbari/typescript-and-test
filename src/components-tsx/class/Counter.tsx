@@ -7,15 +7,14 @@ type CounterState = {
   count: number
 }
 
-export class Counter extends Component<CounterProps, CounterState>{
+export class Counter extends Component<CounterProps, CounterState> {
   state = {
-    count: 0
+    count: 0,
   }
 
   handleClick = () => {
-    this.setState((prevState) => ({count: prevState.count + 1}))
+    this.setState((prevState) => ({ count: prevState.count + 1 }))
   }
-
 
   render() {
     return (
@@ -25,6 +24,4 @@ export class Counter extends Component<CounterProps, CounterState>{
       </div>
     )
   }
-
-
 }

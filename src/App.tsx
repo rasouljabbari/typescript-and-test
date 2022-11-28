@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 // import { Private } from './components-tsx/auth/Private'
 // import { Profile } from './components-tsx/auth/Profile'
 // import { List } from './components-tsx/generics/List'
@@ -8,8 +8,8 @@ import React from "react";
 // import { CustomInput } from './components-tsx/html/Input'
 // import { Text } from './components-tsx/polymorphic/Text'
 // import { CustomSelect } from './components-tsx/react-select/CustomSelect'
-import AppProviders from "./components/providers/app-providers";
-import CustomLottie from "./assets/lottie/CustomLottie";
+import AppProviders from './components/providers/app-providers'
+import CustomLottie from './assets/lottie/CustomLottie'
 // import { Button } from './components-tsx/events/Button'
 // import { Input } from './components-tsx/events/Input'
 // import { Container } from './components-tsx/styles/Container'
@@ -27,7 +27,7 @@ import CustomLottie from "./assets/lottie/CustomLottie";
 // import { Oscar } from './components-tsx/types/Oscar'
 
 type styleProps = {
-  height: number,
+  height: number
   width: number
 }
 
@@ -38,12 +38,11 @@ type actionTypes = {
 }
 
 type interactivityTypes = {
-  mode: string,
+  mode: string
   actions: actionTypes[]
 }
 
 function App() {
-
   // const personName = {
   //   first: 'Rasoul',
   //   last: 'Jabbari'
@@ -64,13 +63,10 @@ function App() {
   //   }
   // ]
 
-
-
   return (
     <AppProviders>
       <div className="App">
-
-    <CustomLottie/>
+        <CustomLottie />
 
         {/*types*/}
         {/*<Heading>This is header</Heading>*/}
@@ -128,10 +124,9 @@ function App() {
         {/*<Text as={'label'} size={'sm'} color={'secondary'}>Label</Text>*/}
 
         {/*<CustomSelect/>*/}
-
       </div>
     </AppProviders>
-  );
+  )
 }
 
-export default App;
+export default App

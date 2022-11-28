@@ -1,8 +1,6 @@
-export type LoggedInTypes = {
-
-}
+export type LoggedInTypes = {}
 
 export type AuthUser = {
-  name: string,
+  name: string
   email: string
 }

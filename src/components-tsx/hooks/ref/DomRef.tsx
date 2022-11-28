@@ -5,13 +5,11 @@ export const DomRef = () => {
 
   useEffect(() => {
     inputRef.current.focus()
-  },[])
+  }, [])
 
-  return(
+  return (
     <div>
-      <input type='text' ref={inputRef} />
+      <input type="text" ref={inputRef} />
     </div>
   )
-
 }
-

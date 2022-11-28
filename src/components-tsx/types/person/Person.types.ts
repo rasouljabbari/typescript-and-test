@@ -1,5 +1,5 @@
 export type Name = {
-  first: string,
+  first: string
   last: string
 }
 

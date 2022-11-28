@@ -1,7 +1,13 @@
-import { createContext, ReactNode, useState, Dispatch, SetStateAction } from 'react'
+import {
+  createContext,
+  ReactNode,
+  useState,
+  Dispatch,
+  SetStateAction,
+} from 'react'
 
 export type AuthUser = {
-  name: string,
+  name: string
   email: string
 }
 
@@ -16,11 +22,11 @@ type UserContextProviderProps = {
 
 export const UserContext = createContext({} as UserContextType)
 
-export const UserContextProvider = ({children}: UserContextProviderProps) => {
+export const UserContextProvider = ({ children }: UserContextProviderProps) => {
   const [user, setUser] = useState<AuthUser | null>(null)
 
-  return(
-    <UserContext.Provider value={{user, setUser}}>
+  return (
+    <UserContext.Provider value={{ user, setUser }}>
       {children}
     </UserContext.Provider>
   )

@@ -1,8 +1,7 @@
 import { LoggedInTypes } from './LoggedIn.types'
-import {useState} from 'react'
+import { useState } from 'react'
 
 export const LoggedIn = (props: LoggedInTypes) => {
-
   const [isLoggedIn, setIsLoggedIn] = useState(false)
 
   const handleLogin = () => {
@@ -12,7 +11,7 @@ export const LoggedIn = (props: LoggedInTypes) => {
     setIsLoggedIn(false)
   }
 
-  return(
+  return (
     <div>
       <button onClick={handleLogin}>Login</button>
       <button onClick={handleLogout}>Logout</button>

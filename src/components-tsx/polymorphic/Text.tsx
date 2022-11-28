@@ -1,4 +1,4 @@
-import React,{ ElementType, ReactNode } from 'react'
+import React, { ElementType, ReactNode } from 'react'
 
 type TextProps = {
   size?: 'sm' | 'md' | 'lg'
@@ -7,7 +7,9 @@ type TextProps = {
   as: ElementType
 }
 
-export const Text = ({size, color, children, as}: TextProps) => {
+export const Text = ({ size, color, children, as }: TextProps) => {
   const Component = as || 'div'
-  return <Component className={`class-with-${size}-${color}`}>{children}</Component>
+  return (
+    <Component className={`class-with-${size}-${color}`}>{children}</Component>
+  )
 }

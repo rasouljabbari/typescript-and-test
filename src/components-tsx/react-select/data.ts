@@ -21,8 +21,8 @@ export const colourOptions: readonly ColourTypes[] = [
 
 // state
 export interface StateOption {
-  readonly value: string;
-  readonly label: string;
+  readonly value: string
+  readonly label: string
 }
 export const stateOptions: readonly StateOption[] = [
   { value: 'AL', label: 'Alabama' },
@@ -84,20 +84,20 @@ export const stateOptions: readonly StateOption[] = [
   { value: 'WV', label: 'West Virginia' },
   { value: 'WI', label: 'Wisconsin' },
   { value: 'WY', label: 'Wyoming' },
-];
+]
 
 // group types and options
-export interface GroupOption{
+export interface GroupOption {
   readonly label: string
   readonly options: readonly StateOption[] | readonly ColourTypes[]
 }
 export const groupOptions: readonly GroupOption[] = [
   {
     label: 'Color',
-    options: colourOptions
+    options: colourOptions,
   },
   {
     label: 'State',
-    options: stateOptions
-  }
+    options: stateOptions,
+  },
 ]

@@ -7,25 +7,23 @@ export const User = () => {
   const handleLogin = () => {
     setUser({
       name: 'Rasoul',
-      email: 'rjdeveloper17@gamil.com'
+      email: 'rjdeveloper17@gamil.com',
     })
   }
   const handleLogout = () => {
     setUser(null)
   }
 
-  return(
+  return (
     <div>
       <button onClick={handleLogin}>Login</button>
       <button onClick={handleLogout}>Logout</button>
-      {
-        user &&
+      {user && (
         <>
           <div>User name is {user?.name}</div>
           <div>User email is {user?.email}</div>
         </>
-      }
+      )}
     </div>
   )
-
 }
