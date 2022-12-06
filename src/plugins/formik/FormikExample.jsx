@@ -1,34 +1,10 @@
 import React from "react";
-import { ErrorMessage, Field, Form, Formik } from "formik";
+import { Form, Formik } from "formik";
 import TextInput from "./components/textInput";
+import { registerFormSchema } from "./registerFormSchema";
+
 
 function FormikExample() {
-
-  const validateHandler = (values) => {
-    let errors = {};
-
-    if (values.name === "") {
-      errors.name = "the name field is required.";
-    } else if (values.name.length < 4) {
-      errors.name = "the name must more than 4 char.";
-    }
-
-    if (values.username === "") {
-      errors.username = "the username field is required.";
-    }
-
-    if (values.email === "") {
-      errors.email = "the email field is required.";
-    } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
-      errors.email = "the email field must be email format.";
-    }
-
-    if (values.password === "") {
-      errors.password = "the password field is required.";
-    }
-
-    return errors;
-  };
 
   const handleSubmit = (values) => {
     console.log("submitted value : ", values);
@@ -45,7 +21,7 @@ function FormikExample() {
         type: "admin",
         role: false
       }}
-      validate={validateHandler}
+      validationSchema={registerFormSchema}
       onSubmit={handleSubmit}
     >
       <Form>
