@@ -9,8 +9,8 @@ import React from "react";
 // import { Text } from './components-tsx/polymorphic/Text'
 // import { CustomSelect } from './components-tsx/react-select/CustomSelect'
 import AppProviders from "./components/providers/app-providers";
-import CustomLottie from "./assets/lottie/CustomLottie";
-import Example from "./assets/date-picker/Example";
+import CustomLottie from "./plugins/lottie/CustomLottie";
+import Example from "./plugins/date-picker/Example";
 // import { Button } from './components-tsx/events/Button'
 // import { Input } from './components-tsx/events/Input'
 // import { Container } from './components-tsx/styles/Container'
