@@ -11,6 +11,7 @@ import React from "react";
 import AppProviders from "./components/providers/app-providers";
 import CustomLottie from "./plugins/lottie/CustomLottie";
 import Example from "./plugins/date-picker/Example";
+import FormikExample from "./plugins/formik/FormikExample";
 // import { Button } from './components-tsx/events/Button'
 // import { Input } from './components-tsx/events/Input'
 // import { Container } from './components-tsx/styles/Container'
@@ -71,7 +72,10 @@ function App() {
         {/*<CustomLottie />*/}
 
         {/*multi language datepicker*/}
-        <Example />
+        {/*<Example />*/}
+
+        {/*formik plugin*/}
+        <FormikExample/>
 
         {/*types*/}
         {/*<Heading>This is header</Heading>*/}
