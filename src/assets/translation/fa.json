@@ -1,0 +1,25 @@
+{
+  "validation": {
+    "fields": {
+      "name": "نام",
+      "username": "نام کاربری",
+      "password": "رمز عبور",
+      "email": "ایمیل",
+      "about": "درباره من",
+      "first_name": "نام",
+      "last_name": "نام خانوادگی",
+      "father_name": "نام پدر",
+      "issued": "صادره",
+      "birth_certificate_id": "شماره شناسنامه",
+      "industry": "صنعت",
+      "age_range": "بازه سنی",
+      "score": "امتیاز",
+      "education_level": "سطح تحصیلات"
+    },
+    "required": "وارد کردن فیلد {{field}} الزامی است"
+  },
+  "please enter your first name": "لطفا نام خود را وارد کنید",
+  "please enter your last name": "لطفا نام خانوادگی خود را وارد کنید",
+  "please enter your email": "لطفا آدرس ایمیل خود را وارد کنید",
+  "please enter your industry": "لطفا صنعت مورد فعالیت خود را وارد کنید"
+}

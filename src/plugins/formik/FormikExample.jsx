@@ -64,7 +64,6 @@ function FormikExample() {
         <TextInput
           label={'User Type'}
           name={'type'}
-          rows={5}
           as={"select"}
         >
           <option value="normal">Normal</option>

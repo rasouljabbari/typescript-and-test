@@ -1,4 +1,5 @@
 import React from "react";
+import './App.css'
 // import { Private } from './components-tsx/auth/Private'
 // import { Profile } from './components-tsx/auth/Profile'
 // import { List } from './components-tsx/generics/List'
@@ -14,6 +15,7 @@ import Example from "./plugins/date-picker/Example";
 import FormikExample from "./plugins/formik/FormikExample";
 import YupExample from "./plugins/yup/yupExample";
 import { setLocale } from "yup";
+import Login from "./plugins/yup/login/Login";
 // import { Button } from './components-tsx/events/Button'
 // import { Input } from './components-tsx/events/Input'
 // import { Container } from './components-tsx/styles/Container'
@@ -79,10 +81,12 @@ function App() {
         {/*<Example />*/}
 
         {/*formik plugin*/}
-        <FormikExample/>
+        {/*<FormikExample/>*/}
 
         {/*yup plugin*/}
-        <YupExample/>
+        {/*<YupExample/>*/}
+
+        <Login/>
 
         {/*types*/}
         {/*<Heading>This is header</Heading>*/}

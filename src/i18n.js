@@ -1,21 +1,11 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
+import translationFa from './assets/translation/fa.json'
 
 const resources = {
   fa: {
-    translation: {
-      "validation": {
-        "fields": {
-          "name": "نام",
-          "username": "نام کاربری",
-          "password": "رمز عبور",
-          "email": "ایمیل",
-          "about": "درباره من",
-        },
-        "required": "وارد کردن فیلد {{field}} الزامی است"
-      }
-    }
-  }
+    translation: translationFa
+  },
 };
 
 i18n
